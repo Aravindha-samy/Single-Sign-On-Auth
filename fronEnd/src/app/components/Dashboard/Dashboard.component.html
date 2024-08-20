@@ -1,0 +1,10 @@
+<!-- src/app/dashboard/dashboard.component.html -->
+<div class="dashboard-container">
+  <h1>Welcome to the Dashboard</h1>
+  <p *ngIf="user">
+    Logged in as: {{ user.name }}<br />
+    Email: {{ user.email }}<br />
+    <img [src]="user.picture" alt="Profile Picture" />
+  </p>
+  <button (click)="logout()">Logout</button>
+</div>
